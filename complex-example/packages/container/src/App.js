@@ -3,7 +3,7 @@ import { MarketingApp } from './components/MarketingApp';
 
 export const App = () => (
     <div>
-        <h1>Hi there, third run!</h1>
+        <h1>Hi there, test other branch!</h1>
         <hr />
         <MarketingApp />
     </div>
