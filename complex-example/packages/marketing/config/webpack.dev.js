@@ -7,6 +7,11 @@ const packageJson = require('../package.json');
 
 const devConfig = {
     mode: 'development',
+    // Important line required to avoid issues with nested routing
+    // in development environment, the '/' at the end is very important!!
+    output: {
+        publicPath: 'http://localhost:8081/',
+    },
     devServer: {
         port: 8081,
         // Important for navigation
