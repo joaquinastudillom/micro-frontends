@@ -10,9 +10,7 @@ const devConfig = {
     devServer: {
         port: 8081,
         // Important for navigation
-        historyApiFallback: {
-            index: 'index.html',
-        },
+        historyApiFallback: true,
     },
     plugins: [
         new ModuleFederationPlugin({
